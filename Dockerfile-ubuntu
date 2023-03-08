@@ -1,0 +1,6 @@
+FROM ubuntu:20.04
+
+WORKDIR /testing
+COPY ./ /testing
+COPY /libcurl-impersonate /usr/local/lib/
+

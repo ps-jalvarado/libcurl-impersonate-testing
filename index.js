@@ -1,5 +1,6 @@
 process.env.LD_PRELOAD = '/usr/local/lib/libcurl.so';
-process.env.CURL_IMPERSONATE = 'chrome107';
+process.env.CURL_IMPERSONATE = 'chrome110';
+process.env.CURL_IMPERSONATE_HEADERS = "yes";
 
 const { curly } = require('node-libcurl');
 

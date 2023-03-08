@@ -17,6 +17,6 @@ COPY ./ /testing
 RUN npm install node-libcurl --build-from-source --curl_libraries='-Wl,-rpath /usr/local/lib -lcurl'
 
 ENV LD_PRELOAD=/usr/local/lib/libcurl.so
-ENV CURL_IMPERSONATE=chrome107
+ENV CURL_IMPERSONATE=chrome110
 
 CMD ["node", "index.js"]

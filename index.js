@@ -1,6 +1,5 @@
 process.env.LD_PRELOAD = '/usr/local/lib/libcurl.so';
-process.env.CURL_IMPERSONATE = 'chrome110';
-//process.env.CURL_IMPERSONATE_HEADERS = "no"; // use our own headers, or comment this line out to use curl-impersonate's default headers
+process.env.CURL_IMPERSONATE = 'chrome107';
 
 const { curly } = require('node-libcurl');
 
@@ -12,7 +11,7 @@ async function start(){
         let content = response.data;
         console.log(content);
     }
-    await sleep(30000);
+    await sleep(300000);
 }
 
 function sleep(ms) {
